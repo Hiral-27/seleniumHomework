@@ -28,6 +28,7 @@ public class T01ParaBank {
         driver.findElement(By.name("customer.ssn")).sendKeys("9876543210");
         driver.findElement(By.id("customer.username")).sendKeys("Selena@gmail.com");
         driver.findElement(By.id("customer.password")).sendKeys("Selena123");
+        driver.findElement(By.id("repeatedPassword")).sendKeys("Selena123");
         Thread.sleep(2000);
         driver.findElement(By.className("button")).click();
         Thread.sleep(2000);

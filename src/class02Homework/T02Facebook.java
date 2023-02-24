@@ -29,6 +29,9 @@ public class T02Facebook {
         driver.findElement(By.name("reg_email__")).sendKeys("Taylor@gmail.com");
         driver.findElement(By.name("reg_email_confirmation__")).sendKeys("Taylor@gmail.com");
         driver.findElement(By.id("password_step_input")).sendKeys("Taylor123");
+        driver.findElement(By.name("birthday_day")).sendKeys("13");
+        driver.findElement(By.name("birthday_month")).sendKeys("12");
+        driver.findElement(By.name("birthday_year")).sendKeys("1989");
         driver.findElement(By.name("websubmit")).click();
         driver.quit();
 
