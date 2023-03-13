@@ -34,6 +34,7 @@ public class T02Facebook {
         driver.findElement(By.name("birthday_year")).sendKeys("1989");
        // driver.findElement(By.className("_8idr img")).click();
         driver.findElement(By.name("websubmit")).click();
+        Thread.sleep(5000);
         driver.quit();
 
     }
