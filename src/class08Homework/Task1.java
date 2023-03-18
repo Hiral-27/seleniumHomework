@@ -20,8 +20,8 @@ changing the id doesn't affect the logic or xpath
  */
 public class Task1 {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver","Driver/geckodriver.exe");
-        WebDriver driver= new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        WebDriver driver= new ChromeDriver();
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
         driver.manage().window().maximize();
 
@@ -35,7 +35,7 @@ public class Task1 {
         for (int i = 0; i < column.size(); i++) {
             String id = column.get(i).getText();
 
-            if (id.equalsIgnoreCase("46415522")) {
+            if (id.equalsIgnoreCase("52306A")) {
                 System.out.println(id);
                 System.out.println("Index for Id row is : "+(i+1));
                 driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr[" +(i+1)+"]/td[1]")).click();
